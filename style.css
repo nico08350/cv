@@ -1,0 +1,323 @@
+/* ============================================================
+   VARIABLES
+============================================================ */
+:root {
+  --color1: #d89584;
+  --color2: #ffffff;
+  --color3: #f4f4f4;
+  --text-dark: #333;
+  --text-light: #555;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.25);
+  --radius: 12px;
+  --transition: 0.3s ease;
+}
+
+/* ============================================================
+   GLOBAL
+============================================================ */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fafafa;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+/* ============================================================
+   COVER / HERO
+============================================================ */
+.cover {
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url(/images/cover.jpg) no-repeat center/cover;
+  height: 380px;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+  box-shadow: var(--shadow);
+}
+
+.cover_profile {
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: var(--shadow);
+  margin-bottom: 10px;
+  transition: var(--transition);
+}
+
+.cover_profile:hover {
+  transform: scale(1.05);
+}
+
+.cover h1 {
+  font-size: 42px;
+  margin: 10px 0 5px 0;
+}
+
+.cover p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.cover_contact {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-left: 4px solid var(--color1);
+  padding-left: 10px;
+}
+
+.cover_contact a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.cover_contact a:hover {
+  opacity: 0.7;
+}
+
+/* ============================================================
+   BUTTONS — CHOISIS TON STYLE CI-DESSOUS
+============================================================ */
+
+/* ------------------------------------------------------------
+   STYLE 1 — GLASSMORPHISM (MODERNE, TRANSLUCIDE)
+------------------------------------------------------------ */
+/*
+.boutton_contact,
+.boutton_cv {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.boutton_contact:hover,
+.boutton_cv:hover {
+  background: var(--color1);
+  border-color: var(--color1);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+*/
+
+/* ------------------------------------------------------------
+   STYLE 2 — MATERIAL DESIGN (BOUTON PLEIN, PRO)
+------------------------------------------------------------ */
+/*
+.boutton_contact,
+.boutton_cv {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  background: var(--color1);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.boutton_contact:hover,
+.boutton_cv:hover {
+  background: #c07a6c;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+*/
+
+/* ------------------------------------------------------------
+   STYLE 3 — OUTLINE PREMIUM (ÉLÉGANT, MINIMALISTE)
+------------------------------------------------------------ */
+
+.boutton_contact,
+.boutton_cv {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: 2px solid var(--color1);
+  color: var(--color1);
+  background: transparent;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.boutton_contact:hover,
+.boutton_cv:hover {
+  background: var(--color1);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ============================================================
+   SECTIONS
+============================================================ */
+.section {
+  padding: 60px 40px;
+}
+
+.section_grise1 {
+  background: url(/images/triangle2white.svg) no-repeat center bottom/100%;
+  background-color: var(--color3);
+  padding-bottom: 140px;
+}
+
+.section_grise2 {
+  background: url(/images/triangle1white.svg) no-repeat center top/100%;
+  background-color: var(--color3);
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.presentation {
+  text-align: center;
+  font-size: 20px;
+  max-width: 800px;
+  margin: auto;
+  color: var(--text-light);
+}
+
+/* ============================================================
+   CARDS
+============================================================ */
+.card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 25px;
+  width: 260px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--color1);
+}
+
+/* ============================================================
+   TIMELINE
+============================================================ */
+.timeline_wrapper {
+  margin-top: 40px;
+}
+
+.timeline {
+  max-width: 700px;
+  margin: auto;
+  border-left: 3px solid var(--color1);
+  padding-left: 25px;
+}
+
+.timeline_item {
+  margin-bottom: 35px;
+  position: relative;
+  padding-left: 10px;
+}
+
+.timeline_item::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: var(--color1);
+  border-radius: 50%;
+  position: absolute;
+  left: -32px;
+  top: 5px;
+}
+
+.timeline_item h3 {
+  margin: 0;
+  color: var(--color1);
+  font-size: 20px;
+}
+
+.timeline_item p {
+  margin-top: 5px;
+  color: var(--text-light);
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .timeline {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .timeline_item::before {
+    display: none;
+  }
+
+  .cover {
+    height: auto;
+    padding-bottom: 40px;
+  }
+}
+.about_container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.about_highlights {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.highlight_item {
+  background: white;
+  border-radius: var(--radius);
+  padding: 25px;
+  width: 260px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.highlight_item:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.highlight_item h3 {
+  margin-top: 0;
+  color: var(--color1);
+}
