@@ -36,12 +36,12 @@ h3 {
 .cover {
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url(/images/cover.jpg) no-repeat center/cover;
-  height: 380px;
+    url(images/cover.jpg) no-repeat center/cover;
+  height: 400px; /* cover réduite */
   position: relative;
   text-align: center;
   color: white;
-  padding-top: 40px;
+  padding-top: 25px;
   box-shadow: var(--shadow);
 }
 
@@ -59,12 +59,12 @@ h3 {
 }
 
 .cover h1 {
-  font-size: 42px;
+  font-size: 34px;
   margin: 10px 0 5px 0;
 }
 
 .cover p {
-  font-size: 18px;
+  font-size: 16px;
   opacity: 0.9;
 }
 
@@ -88,65 +88,8 @@ h3 {
 }
 
 /* ============================================================
-   BUTTONS — CHOISIS TON STYLE CI-DESSOUS
+   BUTTONS — OUTLINE PREMIUM
 ============================================================ */
-
-/* ------------------------------------------------------------
-   STYLE 1 — GLASSMORPHISM (MODERNE, TRANSLUCIDE)
------------------------------------------------------------- */
-/*
-.boutton_contact,
-.boutton_cv {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  transition: var(--transition);
-}
-
-.boutton_contact:hover,
-.boutton_cv:hover {
-  background: var(--color1);
-  border-color: var(--color1);
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-hover);
-}
-*/
-
-/* ------------------------------------------------------------
-   STYLE 2 — MATERIAL DESIGN (BOUTON PLEIN, PRO)
------------------------------------------------------------- */
-/*
-.boutton_contact,
-.boutton_cv {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 8px;
-  background: var(--color1);
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  transition: var(--transition);
-  box-shadow: var(--shadow);
-}
-
-.boutton_contact:hover,
-.boutton_cv:hover {
-  background: #c07a6c;
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-hover);
-}
-*/
-
-/* ------------------------------------------------------------
-   STYLE 3 — OUTLINE PREMIUM (ÉLÉGANT, MINIMALISTE)
------------------------------------------------------------- */
-
 .boutton_contact,
 .boutton_cv {
   display: inline-block;
@@ -175,13 +118,13 @@ h3 {
 }
 
 .section_grise1 {
-  background: url(/images/triangle2white.svg) no-repeat center bottom/100%;
+  background: url(images/triangle2white.svg) no-repeat center bottom/100%;
   background-color: var(--color3);
   padding-bottom: 140px;
 }
 
 .section_grise2 {
-  background: url(/images/triangle1white.svg) no-repeat center top/100%;
+  background: url(images/triangle1white.svg) no-repeat center top/100%;
   background-color: var(--color3);
   padding-top: 150px;
   padding-bottom: 100px;
@@ -285,10 +228,14 @@ h2 {
   }
 
   .cover {
-    height: auto;
+    height: 220px;
     padding-bottom: 40px;
   }
 }
+
+/* ============================================================
+   ABOUT SECTION
+============================================================ */
 .about_container {
   max-width: 900px;
   margin: auto;
